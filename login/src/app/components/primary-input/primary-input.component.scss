@@ -1,7 +1,7 @@
-@import "../../../styles/variables.scss";
+@use "../../../styles/variables.scss" as v;
 
 .input-wrapper {
-    color: $text-color;
+    color: v.$text-color;
     font-size: 16px;
     text-align: start;
 
@@ -16,7 +16,7 @@
         
         .icon {
             padding: 12px;
-            background-color: $primary-color;
+            background-color: v.$primary-color;
             border-radius: 0 8px 8px 0;
 
             img {
@@ -27,7 +27,7 @@
         input {
             border: none;
             border-radius: 8px 0 0 8px;
-            background-color: $gray-secondary-bg;
+            background-color: v.$gray-secondary-bg;
             padding: 12px 0 12px 20px;
             width: 100%;
         }

@@ -1,4 +1,4 @@
-@import "../../../styles/variables.scss";
+@use "../../../styles/variables.scss" as v;
 
 main {
     display: flex;
@@ -19,7 +19,7 @@ main {
         gap: 8px;
 
         flex-grow: 1;
-        background-color: $gray-bg;
+        background-color: v.$gray-bg;
     }
 
     .form-section {
@@ -53,14 +53,14 @@ main {
                 width: 100%;
 
                 font-size: 14px;
-                color: $gray-bg;
+                color: v.$gray-bg;
                 font-weight: 400;
                 text-transform: uppercase;
 
                 div {
                     flex-grow: 1;
                     height: 2px;
-                    background-color: $gray-bg;
+                    background-color: v.$gray-bg;
                 }
             }
 
@@ -79,14 +79,14 @@ main {
                 }
     
                 &.btn-primary {
-                    background-color: $primary-color;
+                    background-color: v.$primary-color;
                     color: white;
                     box-shadow:0px 8px 12px rgba(148.23004603385925, 64.33935597538948, 255, 0.20000000298023224);
                 }
     
                 &.btn-secondary {
-                    border: 1px solid $primary-color;
-                    color: $primary-color;
+                    border: 1px solid v.$primary-color;
+                    color: v.$primary-color;
                 }
             }
         }
